@@ -1,8 +1,19 @@
-templates
+Templates
 =========
 
 Templates for new documents.
 
-**Nautilus / Thunar**:
+---
 
-Either run ```install.sh``` or copy the files you want to ~/Templates. The templates should then appear in the New Document menu.
+## Installing
+
+
+Either run ```install.sh``` or copy the files you want to ~/Templates.
+
+## Creating new Documents
+
+**GUI**: in your file manager, right click->Create Document->[template you want]
+
+**CLI**: `new_template.sh [template_file] [new_file]`
+
+Example: `new_template.sh python.py hello_world.py`
