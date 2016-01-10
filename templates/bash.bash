@@ -1,1 +1,1 @@
-#!/bin/bash
+#!/bin/env bash
