@@ -1,4 +1,7 @@
 #!/usr/bin/sh
 
 TEMPL_FOLDER=~/Templates
-cp $TEMPL_FOLDER/$1 $2
+EXTENSION=$(echo $1 | tr "." ":" | awk -F: '{print $2}')
+FILE=$(ls $TEMPL_FOLDER | grep $EXTENSION)
+
+cp $TEMPL_FOLDER/$FILE $1
